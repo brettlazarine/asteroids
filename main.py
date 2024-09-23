@@ -42,7 +42,7 @@ def main():
                 raise SystemExit()
             for s in shots:
                 if a.collision_check(s):
-                    a.kill()
+                    a.split()
                     s.kill()
 
         pygame.display.flip()
